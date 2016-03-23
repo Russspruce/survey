@@ -1,0 +1,15 @@
+.jumbotron{
+  background-size: cover;
+  background-position: center;
+  background-color: #00693C;
+  margin-top: 50px;
+}
+
+.textPop{
+  font-size: 22px;
+  font-weight: bolder;
+  color: #FFB612;
+}
+ body {
+   background-color: #4B92DB;
+ }

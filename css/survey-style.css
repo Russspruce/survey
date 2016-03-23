@@ -1,0 +1,21 @@
+#surveySubmit{
+  align-items: center;
+}
+
+.hidden{
+  display: none;
+}
+
+.jumbotron{
+  background-color: #00693C;
+  margin-top: 50px;
+}
+
+ body {
+   background-color: #4B92DB;
+     color: #FFB612;
+ }
+
+.theButton {
+  color: black;
+}

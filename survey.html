@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portland survey</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/survey-style.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.12.2.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+       <h1>Survey Portland!!</h1>
+       <h2></h2>
+       <p><a class="btn btn-primary btn-lg" href="index.html" role="button">Nevermind</a></p>
+     </div>
+   </div>
+   <div class="container main-page">
+     <div class="col-md-6">
+       <ol>
+         <li>
+           <div class="form-group">
+             <label for="name">Name:</label>
+             <input id="nameBox" class="form-control" type="text">
+           </div>
+         </li>
+         <li>
+           <label>Select age range</label>
+           <div class="radio">
+            <label>
+              <input type="radio" name="age" value="18-25">
+              18-25
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="age" value="26-39">
+              26-39
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="age" value="40-64">
+              40-64
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="age" value="65+">
+              65+
+            </label>
+          </div>
+        </li>
+         <li>
+           <div class="form-group">
+             <label for="email">Email:</label>
+             <input id="emailBox" class="form-control" type="text">
+           </div>
+         </li>
+         <li>
+           <div class="form-group">
+             <label for="origin">Origin City:</label>
+             <input id="originBox" class="form-control" type="text">
+           </div>
+         </li>
+         <li>
+           <div class="form-group">
+             <label for="arrival">When did you arrive in Portland?</label>
+             <input id="arrival" class="form-control" type="date">
+           </div>
+         </li>
+       </ol>
+     </div>
+     <div class="col-md-6">
+       <ol start="6">
+         <li>
+           <label>What Portland location intrests you most?</label>
+           <select class="form-control" id="placePortland">
+              <option value="noValue">- - Select Place - -</option>
+              <option value="omsi">OMSI</option>
+              <option value="moda">MODA Center</option>
+              <option value="pioneer">Pioneer Courthouse Square</option>
+              <option value="groundKontrol">Ground Kontrol</option>
+            </select>
+         </li>
+
+         <li>
+           <label>How do you get around the city?</label>
+           <div class="radio">
+            <label>
+              <input type="radio" name="transport"class="hidden1"value="walk">
+              Walk
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="transport"class="hidden1"value="bike">
+              Bicycle
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="transport"class="hidden1"value="trimet">
+              Trimet Public Transit
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="transport"class="hidden1"value="personalAuto">
+              Personal Vehicle
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="transport"class="hidden1"value="rentAuto">
+              Rental Vehicle
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input id="otherRadio" type="radio" name="events" value="otherTransport">
+              Other: <input id="otherInputBox" class="form-control hidden" type="text">
+            </label>
+          </div>
+         </li>
+         <li>
+           <label>What do you prefer to drink?</label>
+           <select class="form-control" id="eventsPortland">
+              <option value="noValue">- - Drink of Choice - -</option>
+              <option value="beer">Beer</option>
+              <option value="wine">Wine</option>
+              <option value="liquor">Liquor</option>
+              <option value="hardCider">Hard Cider</option>
+              <option value="noPreference">No Preference</option>
+              <option value="noDrink">I don't drink</option>
+            </select>
+         </li>
+         <li>
+           <label>How do you get around the city?</label>
+           <div class="radio">
+            <label>
+              <input type="radio" name="events"value="pirateFest">
+              Pirate Festival
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="events"value="nakedBike">
+              PDX Naked Bike Ride
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="events" value="jazzFest">
+              Portland Jazz Fest
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="events" value="pdxLAN">
+              PDXLAN
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="events" value="roseFest">
+              Portland Rose Festival
+            </label>
+          </div>
+         </li>
+         <li>
+           <label>What do you think of Portland?</label>
+           <select class="form-control" id="ratePortland">
+              <option value="noValue">- - Ratings - -</option>
+              <option value="rateFive">5: Love it!</option>
+              <option value="rateFour">4: Like it!</option>
+              <option value="rateThree">3: Okay with it.</option>
+              <option value="rateTwo">2: Meh.</option>
+              <option value="rateOne">1: Dislike.</option>
+              <option value="rateZero">HIGHLY DISAPPOINTED!</option>
+            </select>
+         </li>
+       </ol>
+     </div>
+     <div>
+       <button type="submit" class="btn btn-lg theButton" id="surveySubmit">Submit</button>
+     </div>
+   </div>
+  </body>
+</html>
